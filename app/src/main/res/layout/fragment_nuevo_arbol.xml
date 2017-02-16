@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/btn_enviar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/arbol_tipo_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:text="Tipo:"
+                android:layout_marginLeft="10sp"
+
+                />
+
+            <EditText
+                android:id="@+id/arbol_tipo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/arbol_tipo_txt"
+                android:layout_toRightOf="@+id/arbol_tipo_txt"
+                android:layout_marginRight="10sp"
+                android:maxLines="1"
+                android:inputType="text"
+                />
+            <!--
+            <TextView
+                android:id="@+id/arbol_altura_txt"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/arbol_tipo_txt"
+                android:layout_alignLeft="@+id/arbol_tipo_txt"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:text="Altura (aprox.) en metros:"
+                android:layout_marginBottom="10sp"
+                />
+
+            <EditText
+                android:id="@+id/arbol_altura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/arbol_altura_txt"
+                android:layout_alignBottom="@+id/arbol_altura_txt"
+                android:layout_toRightOf="@+id/arbol_altura_txt"
+                android:layout_marginRight="10sp"
+                android:layout_marginTop="5sp"
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                />
+
+            <TextView
+                android:id="@+id/arbol_edad_txt"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/arbol_altura_txt"
+                android:layout_alignLeft="@+id/arbol_altura_txt"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:text="Edad (aprox.) en años:"
+                android:layout_marginBottom="10sp"
+                />
+
+            <EditText
+                android:id="@+id/arbol_edad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/arbol_edad_txt"
+                android:layout_alignBottom="@+id/arbol_edad_txt"
+                android:layout_toRightOf="@+id/arbol_edad_txt"
+                android:layout_marginRight="10sp"
+                android:layout_marginTop="5sp"
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                />
+            -->
+            <TextView
+                android:id="@+id/arbol_descripcion_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:layout_below="@+id/arbol_tipo"
+                android:layout_alignLeft="@+id/arbol_tipo_txt"
+                android:text="Descripcion:"
+
+                />
+
+            <EditText
+                android:id="@+id/arbol_descripcion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/arbol_descripcion_txt"
+                android:layout_alignTop="@+id/arbol_descripcion_txt"
+                android:maxLines="1"
+                android:inputType="text"
+                android:layout_alignRight="@+id/arbol_tipo"
+                android:layout_alignEnd="@+id/arbol_tipo" />
+
+
+
+            <TextView
+                android:id="@+id/arbol_patrimonial_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:layout_below="@+id/arbol_descripcion"
+                android:layout_alignLeft="@+id/arbol_tipo_txt"
+                android:text="Patrimonial:"
+
+                />
+
+
+            <CheckBox
+                android:id="@+id/arbol_patrimonial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/arbol_patrimonial_txt"
+                android:layout_toRightOf="@+id/arbol_patrimonial_txt"
+                />
+            <!--
+                        <TextView
+                            android:id="@+id/arbol_ciudad_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical|left"
+                            android:layout_below="@+id/arbol_provincia_txt"
+                            android:layout_alignLeft="@+id/arbol_tipo_txt"
+                            android:text="Ciudad:"
+                            android:layout_marginBottom="10sp"
+                            />
+
+                        <EditText
+                            android:id="@+id/arbol_ciudad"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/arbol_ciudad_txt"
+                            android:layout_alignBottom="@+id/arbol_ciudad_txt"
+                            android:layout_toRightOf="@+id/arbol_ciudad_txt"
+                            android:layout_marginRight="10sp"
+                            android:layout_marginTop="5sp"
+                            android:maxLines="1"
+                            android:inputType="text"
+                            />
+
+                        <TextView
+                            android:id="@+id/arbol_direccion_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical|left"
+                            android:layout_below="@+id/arbol_ciudad_txt"
+                            android:layout_alignLeft="@+id/arbol_tipo_txt"
+                            android:text="Direccion:"
+                            android:layout_marginBottom="10sp"
+                            />
+
+                        <EditText
+                            android:id="@+id/arbol_direccion"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/arbol_direccion_txt"
+                            android:layout_alignBottom="@+id/arbol_direccion_txt"
+                            android:layout_toRightOf="@+id/arbol_direccion_txt"
+                            android:layout_marginRight="10sp"
+                            android:layout_marginTop="5sp"
+                            android:maxLines="1"
+                            android:inputType="text"
+                            />
+                            -->
+
+            <TextView
+                android:id="@+id/arbol_mapa_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:layout_below="@+id/arbol_patrimonial"
+                android:layout_alignLeft="@+id/arbol_tipo_txt"
+                android:text="Ubicación:"
+
+                />
+
+            <fragment
+                android:id="@+id/arbol_map"
+                class="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="120sp"
+                android:layout_below="@+id/arbol_mapa_txt"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:layout_marginBottom="10sp"
+                />
+
+            <TextView
+                android:id="@+id/arbol_imagen_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:layout_below="@+id/arbol_map"
+                android:layout_alignLeft="@+id/arbol_tipo_txt"
+                android:text="Imagen:"
+
+                />
+
+            <ImageButton
+                android:id="@+id/arbol_imagen"
+                android:layout_width="match_parent"
+                android:layout_height="120sp"
+                android:layout_below="@+id/arbol_imagen_txt"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_menu_camera"
+                />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/btn_enviar"
+        android:layout_width="match_parent"
+        android:layout_height="32sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@android:color/darker_gray"
+        android:layout_above="@+id/arbol_snackbar"
+        android:text="Enviar"
+        android:layout_margin="3sp"
+        android:clickable="true"
+        android:gravity="center"
+        />
+
+
+     <View
+         android:id="@+id/arbol_snackbar"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:visibility="visible"/>
+
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@android:color/holo_green_light"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/arbol_tipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="#ff000000"
+        android:text="Tipo"
+        android:textSize="14dp"
+        android:padding="8sp"
+        android:textStyle="bold" />
+
+    <!--
+    <ImageView
+        android:id="@+id/arbol_imagen"
+        android:layout_width="80sp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:src="@mipmap/logo"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"></ImageView>
+-->
+
+
+
+
+
+
+
+</LinearLayout>

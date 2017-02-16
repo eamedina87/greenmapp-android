@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="5sp"
+    android:paddingRight="5sp"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_enviar"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:id="@+id/arbol_detalles_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10sp"
+                android:layout_marginBottom="5sp">
+
+
+                <ImageView
+                    android:id="@+id/arbol_imagen"
+                    android:layout_width="80sp"
+                    android:layout_height="80sp"
+                    android:src="@mipmap/logo"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/arbol_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Id"/>
+
+                    <TextView
+                        android:id="@+id/arbol_tipo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Tipo"/>
+
+                    <TextView
+                        android:id="@+id/arbol_ciudad"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Ciudad"/>
+
+                    <TextView
+                        android:id="@+id/arbol_provincia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Provincia"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/reclamo_descripcion_txt"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/reclamo_titulo_txt"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:layout_alignLeft="@+id/reclamo_titulo_txt"
+                android:text="Denuncia:"
+                />
+
+            <EditText
+                android:id="@+id/reclamo_descripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/reclamo_descripcion_txt"
+                android:inputType="textMultiLine"
+                android:gravity="top|left"
+                android:minLines="6"
+                android:lines="8"
+                android:maxLines="10"
+                android:imeOptions="actionSend"
+                android:layout_marginLeft="10sp"
+                android:layout_weight="3"
+                android:layout_marginRight="10sp"
+                android:layout_marginBottom="10sp"
+                android:hint="Escriba aqui su reclamo o denuncia"
+                />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+        <TextView
+            android:id="@+id/btn_enviar"
+            android:layout_width="match_parent"
+            android:layout_height="32sp"
+            android:background="@android:color/darker_gray"
+            android:text="Enviar"
+            android:clickable="true"
+            android:gravity="center"
+            android:layout_margin="2sp"
+            android:layout_alignParentBottom="true"
+            />
+
+</RelativeLayout>

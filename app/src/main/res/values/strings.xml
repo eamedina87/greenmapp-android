@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">GreenMapp</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!--<string name="google_maps_api">AIzaSyBN5JKnFYPw0NPg3_wgVGX0L9QMMpTnPt0</string>-->
+    <string name="title_activity_maps">Map</string>
+    <string name="facebook_app_id">1743990852506658</string>
+    <string name="google_app_id">yachaygreen</string>
+    <string name="title_activity_navigation">NavigationActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+</resources>

@@ -1,0 +1,41 @@
+apply plugin: 'com.android.application'
+
+android {
+
+    compileSdkVersion 25
+    buildToolsVersion "25.0.1"
+    defaultConfig {
+        applicationId "ec.medinamobile.greenmapp"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 12
+        versionName "1.2"
+        multiDexEnabled true
+    }
+    buildTypes {
+        debug {
+            resValue "string", "google_maps_api_key", "AIzaSyC46Z0_AYgkFy4JyW21-bIkLM2JO0iuyRk"
+        }
+        release {
+            resValue "string", "google_maps_api_key", "AIzaSyC8ifuvBU1SXro4vzQ89UL3dIvZH4VQjOE"
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        repositories {
+            mavenCentral()
+            maven { url 'https://oss.sonatype.org/content/repositories/ksoap2-android-releases/' }
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:25.0.1'
+    compile 'com.android.support:design:25.0.1'
+    compile 'com.google.android.gms:play-services-maps:10.0.1'
+    compile 'com.google.android.gms:play-services-location:10.0.1'
+    compile 'com.facebook.android:facebook-android-sdk:[4,5)'
+    compile 'com.google.code.ksoap2-android:ksoap2-android:3.6.0'
+    compile 'com.google.maps.android:android-maps-utils:0.4.4'
+}

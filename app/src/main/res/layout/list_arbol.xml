@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/arbol_imagen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/arbol_tipo"
+        android:layout_alignBottom="@+id/arbol_ciudad"
+        android:src="@mipmap/ic_tree"/>
+
+    <TextView
+        android:id="@+id/arbol_tipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tipo"
+        android:layout_toRightOf="@+id/arbol_imagen"
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="3sp"
+        />
+
+    <TextView
+        android:id="@+id/arbol_direccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Direccion - Sector"
+        android:layout_below="@+id/arbol_tipo"
+        android:layout_alignLeft="@+id/arbol_tipo"
+        android:layout_marginTop="3sp"/>
+
+    <TextView
+        android:id="@+id/arbol_ciudad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ciudad - Provincia"
+        android:layout_below="@+id/arbol_direccion"
+        android:layout_alignLeft="@+id/arbol_tipo"
+        android:layout_marginTop="3sp"/>
+
+    <TextView
+        android:id="@+id/arbol_distancia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="a 0 mts."
+        android:layout_toLeftOf="@+id/arbol_next"
+        android:layout_alignTop="@+id/arbol_next"
+        android:layout_alignBottom="@+id/arbol_next"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginRight="3sp"/>
+
+    <ImageView
+        android:id="@+id/arbol_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_menu_slideshow"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@+id/arbol_direccion"
+        android:layout_centerVertical="true"
+        />
+
+</RelativeLayout>
